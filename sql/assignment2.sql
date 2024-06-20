@@ -1,3 +1,6 @@
+USE AdventureWorks2019
+GO
+
 -- 1.
 SELECT COUNT(*)
 FROM Production.Product
@@ -68,6 +71,8 @@ FROM Person.CountryRegion c
     JOIN person.StateProvince s ON c.CountryRegionCode = s.CountryRegionCode
 WHERE c.Name IN ('Germany', 'Canada')
 
+----------------------
+
 USE Northwind
 GO
 
@@ -83,7 +88,7 @@ SELECT TOP 5 ShipPostalCode, SUM(od.Quantity) AS TotalQuantity
 FROM Orders o
     JOIN [Order Details] od ON o.OrderID = od.OrderID
 GROUP BY ShipPostalCode
-ORDER BY SUM(od.Quantity) DESC
+ORDER BY 2 DESC
 
 -- 16.
 SELECT TOP 5 ShipPostalCode, SUM(od.Quantity) AS TotalQuantity
@@ -91,7 +96,7 @@ FROM Orders o
     JOIN [Order Details] od ON o.OrderID = od.OrderID
 WHERE o.OrderDate >= DATEADD(YEAR, -27, GETDATE())
 GROUP BY ShipPostalCode
-ORDER BY SUM(od.Quantity) DESC
+ORDER BY 2 DESC
 
 -- 17.
 SELECT City, COUNT(*) AS NumCustomer
@@ -111,24 +116,24 @@ FROM Orders o
 WHERE o.OrderDate > '1998-01-01';
 
 -- 20.
-SELECT c.ContactName
+SELECT c.CustomerID, c.ContactName, MAX(o.OrderDate) AS MostRecentOrder
 FROM Orders o
-    JOIN Customers c ON o.CustomerID = c.CustomerID
-ORDER BY o.OrderDate DESC
+    RIGHT OUTER JOIN Customers c ON o.CustomerID = c.CustomerID
+GROUP BY c.CustomerID, c.ContactName
 
 -- 21.
-SELECT c.ContactName, SUM(od.Quantity) AS TotalQuantity
+SELECT c.CustomerID, c.ContactName, ISNULL(SUM(od.Quantity), 0) AS TotalQuantity
 FROM Orders o
     JOIN [Order Details] od ON o.OrderID = od.OrderID
-    JOIN Customers c ON o.CustomerID = c.CustomerID
-GROUP BY c.ContactName
+    RIGHT OUTER JOIN Customers c ON o.CustomerID = c.CustomerID
+GROUP BY c.CustomerID, c.ContactName
 
 -- 22.
-SELECT c.ContactName, SUM(od.Quantity) AS TotalQuantity
+SELECT c.CustomerID, c.ContactName, ISNULL(SUM(od.Quantity), 0) AS TotalQuantity
 FROM Orders o
     JOIN [Order Details] od ON o.OrderID = od.OrderID
-    JOIN Customers c ON o.CustomerID = c.CustomerID
-GROUP BY c.ContactName
+    RIGHT OUTER JOIN Customers c ON o.CustomerID = c.CustomerID
+GROUP BY c.CustomerID, c.ContactName
 HAVING SUM(od.Quantity) > 100
 
 -- 23.
