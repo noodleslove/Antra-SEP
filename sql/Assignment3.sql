@@ -138,19 +138,24 @@ SELECT ShipCity
 FROM Orders
 
 -- 10.
-SELECT TOP 1 e.City
-FROM Orders o
-    JOIN Employees e ON o.EmployeeID = e.EmployeeID
-WHERE e.City IN (
+WITH MostQuantityCity AS (
     SELECT TOP 1 c.City
     FROM Orders o
         JOIN [Order Details] od ON o.OrderID = od.OrderID
         JOIN Customers c ON o.CustomerID = c.CustomerID
     GROUP BY c.City
     ORDER BY SUM(od.Quantity) DESC
+),
+MostOrdersCity AS (
+    SELECT TOP 1 e.City
+    FROM Orders o
+        JOIN Employees e ON o.EmployeeID = e.EmployeeID
+    GROUP BY e.City
+    ORDER BY COUNT(o.OrderID) DESC
 )
-GROUP BY e.City
-ORDER BY COUNT(o.OrderID) DESC
+SELECT mq.City
+FROM MostQuantityCity mq
+JOIN MostOrdersCity mo ON mq.City = mo.City;
 
 -- 11.
 -- use DISTINCT or GROUP BY keyword to remove duplicate records from a table
