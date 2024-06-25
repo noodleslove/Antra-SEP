@@ -1,3 +1,5 @@
+# 01 Introduction to C# and Data Types
+
 1. What type would you choose for the following "numbers"?
 
 - A person's telephone number
@@ -85,4 +87,31 @@ statement?
 
 1. The problem with the preceding code is that maximum value of byte is 187. So `i` in the loop will never reach 500, and the loop will run indefinitely. To fix this, you can change the type of `i` to `int` or `long`. The solution could be check whether max is less than byte.MaxValue and then use the loop.
 
-2. 
+# 02 Arrays and Strings
+
+1. When to use String vs. StringBuilder in C# ?
+
+    - Use `String` when the value is not going to change.
+    - Use `StringBuilder` when the value is going to change frequently.
+
+2. What is the base class for all arrays in C#?
+
+    `System.Array`
+
+3. How do you sort an array in C#?
+
+    Use the `Array.Sort()` method to sort an array.
+
+4. What property of an array object can be used to get the total number of elements in
+an array?
+
+    The `Length` property.
+
+5. Can you store multiple data types in System.Array?
+
+    Yes, you can store multiple data types in a `System.Array` by using the `object` type.
+
+6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+
+    - `CopyTo()` copies the elements of one array to another array.
+    - `Clone()` creates a shallow copy of the array.
