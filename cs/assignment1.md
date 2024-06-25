@@ -3,26 +3,47 @@
 1. What type would you choose for the following "numbers"?
 
 - A person's telephone number
+
     string
+
 - A person's height
+
     float
+
 - A person's age
+
     ushort
+
 - A person's gender (Male, Female, Prefer Not To Answer)
+
     enum
+
 - A person's salary
+
     uint
+
 - A book's ISBN
+
     string
+
 - A book's price
+
     float
+
 - A book's shipping weight
+
     float
+
 - A country's population
+
     float
+
 - The number of stars in the universe
+
     ulong
+
 - The number of employees in each of the small or medium businesses in the United Kingdom (up to about 50,000 employees per business)
+
     uint
 
 2. What are the difference between value type and reference type variables? What is boxing and unboxing?
