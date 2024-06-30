@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/Evaulation.csproj",
-      "projectName": "Evaulation",
-      "projectPath": "/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/Evaulation.csproj",
+      "projectUniqueName": "/Users/eddie/Devops/Antra-Sep/Learning-C#/DesignPatterns/DesignPatterns.csproj",
+      "projectName": "DesignPatterns",
+      "projectPath": "/Users/eddie/Devops/Antra-Sep/Learning-C#/DesignPatterns/DesignPatterns.csproj",
       "packagesPath": "/Users/eddie/.nuget/packages/",
-      "outputPath": "/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/",
+      "outputPath": "/Users/eddie/Devops/Antra-Sep/Learning-C#/DesignPatterns/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/eddie/.nuget/NuGet/NuGet.Config"
