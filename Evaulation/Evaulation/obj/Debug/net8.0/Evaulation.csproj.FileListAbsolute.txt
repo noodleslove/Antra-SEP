@@ -1,0 +1,15 @@
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/bin/Debug/net8.0/Evaulation
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/bin/Debug/net8.0/Evaulation.deps.json
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/bin/Debug/net8.0/Evaulation.runtimeconfig.json
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/bin/Debug/net8.0/Evaulation.dll
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/bin/Debug/net8.0/Evaulation.pdb
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/Evaulation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/Evaulation.AssemblyInfoInputs.cache
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/Evaulation.AssemblyInfo.cs
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/Evaulation.csproj.CoreCompileInputs.cache
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/Evaulation.sourcelink.json
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/Evaulation.dll
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/refint/Evaulation.dll
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/Evaulation.pdb
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/Evaulation.genruntimeconfig.cache
+/Users/eddie/Devops/Antra-Sep/Evaulation/Evaulation/obj/Debug/net8.0/ref/Evaulation.dll
