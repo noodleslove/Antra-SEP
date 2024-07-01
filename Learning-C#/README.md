@@ -66,8 +66,8 @@
 
 14. Criteria of Union and Union all? Difference between UNION and UNION ALL
 
-- UNION: removes duplicate rows
-- UNION ALL: does not remove duplicate rows, can be use recursively
+- UNION: removes duplicate rows, can be use recursively
+- UNION ALL: does not remove duplicate rows
 
 15. Steps you take to improve SQL Queries
 
