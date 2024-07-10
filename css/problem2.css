@@ -1,0 +1,40 @@
+footer {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-box {
+  width: 20%;
+}
+
+.footer-address {
+  color: gray;
+  padding: 10px;
+}
+
+.footer-address p {
+  margin: 0px;
+}
+
+.footer-list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.footer-list li {
+  margin: 10px 0px;
+  border-bottom: gray 0.5px solid;
+}
+
+.footer-list li a {
+  color: white;
+  text-decoration: none;
+}
