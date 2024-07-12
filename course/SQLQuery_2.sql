@@ -363,7 +363,7 @@ FROM Customers c LEFT JOIN OrderCntCTE cte ON c.CustomerId = cte.CustomerID
 
 
 --1. Initalization
---2.Recursice rule 
+--2. Recursice rule 
 
 SELECT EmployeeId, FirstName, ReportsTo
 From Employees
